@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#120f1f] flex justify-center  items-center select-none h-screen">
+    <div class="claclatrice w-[330px] bg-slate-500 p-16 rounded shadow-xl shadow-indigo-500">
+        <p class="info"></p>
+        <form name="">
+            <div class="resultat h-32px w-full bg-[#120f1f]">
+                <input class="w-full h-14 border border-none focus:outline-none  shadow-inner shadow-black bg-transparent text-lg text-right" type="text" id="fenetre" name="fenetre">
+            </div>
+            <div class="buttons pt-5 text-center">
+                <div class="row pb-5 flex justify-between gap-5">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="7" name="v7" onclick="val(v7.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="8" name="v8" onclick="val(v8.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="9" name="v9" onclick="val(v9.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="+" name="plus" onclick="val(plus.value)">
+                </div>
+                <div class="row pb-5 flex justify-between gap-5">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="4" name="v4" onclick="val(v4.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="5" name="v5" onclick="val(v5.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="6" name="v6" onclick="val(v6.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="-" name="moins" onclick="val(moins.value)">
+                </div>
+                <div class="row pb-5 flex justify-between gap-5">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="1" name="v1" onclick="val(v1.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="2" name="v2" onclick="val(v2.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="3" name="v3" onclick="val(v3.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounded bg-white text-xl font-bold cursor-pointer" type="button" value="*" name="mult" onclick="val(mult.value)">
+                </div>
+                <div class="row pb-5 flex justify-between gap-5">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounde bg-white rounded text-xl font-bold cursor-pointer" type="button" value="0" name="v0" onclick="val(v0.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounde bg-white rounded text-xl font-bold cursor-pointer" type="button" value="." name="dot" onclick="val(dot.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounde bg-white rounded text-xl font-bold cursor-pointer" type="button" value="/" name="div" onclick="val(div.value)">
+                    <input class="w-12 h-10 hover:bg-slate-900 hover:text-5xl hover:text-white active:bg-slate-600 rounde bg-white rounded text-xl font-bold cursor-pointer" type="button" value="=" name="egal" onclick="calcule()">
+                </div>
+                <input class="w-full h-10 hover:bg-slate-900  hover:text-white active:bg-slate-600 rounde bg-white rounded text-xl font-bold cursor-pointer" type="button" value="Supprimer" class="reset" name="reset" onclick="suppr">
+            </div>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
