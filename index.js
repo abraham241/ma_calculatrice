@@ -10,10 +10,14 @@ function calcule(){
         info.innerText =`Veillez saisir des chiffres`;
         allBtns.forEach(btn =>{
             btn.addEventListener('click', function(){
-                info.innerText =""
+                info.innerText ="";
             })
         })
     }else{
         Form.fenetre.value = eval(Form.fenetre.value)
     }
+}
+
+function suppr(){
+    Form.fenetre.value = "";
 }
